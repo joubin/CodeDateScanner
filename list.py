@@ -2,7 +2,9 @@ import sys
 import os
 items = []
 def getCall():
-	file = "/Users/joubin/Desktop/dep.list"
+	file = raw_input('dep.list Location--> ')
+	if file == '':
+		file = "dep.list"
 	if os.path.exists(file):
 		f = open(file, 'r')
 		for line in f:

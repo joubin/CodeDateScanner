@@ -10,20 +10,21 @@ However, if you would like a more updated file.
 
 Run getDep:
 
-$- python getDep.py
+	$- python getDep.py
 
-  Recommend:
+>Recommend:
     Compile getDep.py for better preformance. 
-    $- python -m py_compile getDep.py
+            
+>  	$- python -m py_compile getDep.py
 
-    and then run
+and then run
     
     $- python getDep.pyc
 
 
 Run depFind:
 
-$- python depFind.py
+	$- python depFind.py
 
 The program will ask you for two sets of inputs.
 
@@ -31,4 +32,5 @@ The first one is where you have moved dep.list. Leave empty if its the same fold
 
 
 The second input is the full path to the sources you want to scan.
-  e.g: /var/www/someSite
+  
+	e.g: /var/www/someSite

@@ -37,14 +37,14 @@ def findDepricated(url):
 
 		if "DEPRECATED" in final:
 			allLinks[url] = 1;
-			functions.append(url.split('.')[-2:][0]+"(")
+			functions.append(url.split('.')[-2]);
 			print functions
 	except Exception, e:
 		pass
 
 
 
-def writeToFile(argv):
+def writeToFile():
 	fp = open('dep.list', "w+")
 	for f in functions:
 		fp.write(f+"\n");

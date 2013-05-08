@@ -1,3 +1,4 @@
+import re
 import os
 import sys
 import time
@@ -30,8 +31,9 @@ def CheckForDepricatedFiles():
 		fileToCheck = f
 		#print "Checking: " +fileToCheck
 		for test in deprecatedFunctions:
+			print "test"
 			read = open(f, 'r').read();
-			if test in read:
+			if test in re.split('.|,|;| |(|)|[|]|{|}', read):
 				xxyz=xxyz+1
 				print "found " + test + " in " + fileToCheck
 				if(test not in d):

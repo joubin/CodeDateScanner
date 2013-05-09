@@ -37,12 +37,12 @@ def CheckForDepricatedFiles():
 			#temp = re.split('.|,|;| |(|)|[|]|{|}', read)
 			temp = re.split('\W+', read)
 			if test in temp:
-				xxyz=xxyz+1
-				print (red("found " + test + " in " + fileToCheck))
+				xxyz = xxyz+1;
+				print (red("found " + test + " in " + fileToCheck));
 				if(test not in d):
-					d[test] = 1
+					d[test] = 1;
 				else:
-					d[test] = d[test] + 1
+					d[test] = d[test] + 1;
 
 
 if __name__ == "__main__":

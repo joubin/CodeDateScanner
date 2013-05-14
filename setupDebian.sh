@@ -1,3 +1,4 @@
+#!/bin/bash
 #Debian Setup
 
 pwd=$(pwd)
